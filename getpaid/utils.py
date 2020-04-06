@@ -1,13 +1,13 @@
 # coding: utf8
 import sys
+import six
 from collections import OrderedDict
 from importlib import import_module
 
 from django.conf import settings
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
-from django.utils import six
-from django.utils.six.moves.urllib.parse import parse_qsl
+from six.moves.urllib.parse import parse_qsl
 
 if six.PY3:
     unicode = str
